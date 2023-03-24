@@ -393,6 +393,8 @@ section, .set-2{
     background: #E5BA73;
     height:400px;
     border-radius: 20px;
+    padding-bottom: 5%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .modalBox button{
@@ -402,6 +404,11 @@ section, .set-2{
     float: right;
     padding: 1px 10px;
     line-height: 30px;
+}
+
+.submitbtm{
+    border-radius: 10px;
+    padding: 10px;
 }
 
 
@@ -447,7 +454,7 @@ section, .set-2{
 }
 
 .formsubmit input{
-    width:100%;
+    width:97%;
     border: 0 none;
     display: block;
     padding: 10px;
@@ -457,7 +464,9 @@ section, .set-2{
 
 
 .formsubmit label{
-    color:#222831;
+    color: #222831;
+    line-height: 34px;
+    font-size: 20px;
 }
 
 .post img{
