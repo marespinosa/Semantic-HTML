@@ -1,6 +1,6 @@
 # Semantic-HTML
 
-# Please download the Semantic-HTML and run on the browser the index.htm
+# Please download the Semantic-HTML and run on the browser the file name index.htm
 
 ### Semantic HTML 
 - https://github.com/marsespinosa/Semantic-HTML/blob/htmlcss/index.htm
