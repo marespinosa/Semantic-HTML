@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Semantic HTML - Maricon Espinosa</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobileversion.css">
    
 
 
@@ -13,7 +14,8 @@
 <body>
 
 <header class="container">
-    <nav>
+    <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
+    <nav class="menu">
         <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="style.css">CSS</a></li>
@@ -45,6 +47,7 @@
 
   
     <section class="background-brown">
+        <div class="wavetop"></div>
         <div class="container set-2">
             <div class="col-2">
                 <h1>Black Coffees</h1>
@@ -54,8 +57,8 @@
                 <img src="images/coffe2.png" alt="Lorem Lorem" class="img-liquid" />
                 <p class="descp-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil necessitatibus quod harum tempora voluptate laborum commodi, ipsam aliquam. Dolorum culpa itaque assumenda cupiditate quaerat perspiciatis ratione suscipit cum deleniti beatae.</p>
             </div>
-
         </div>
+        <div class="wavebottom"></div>
     </section>
 
     <div class="space-80"></div>
@@ -65,12 +68,19 @@
 <section class="transparent-background paddingbottom-15 paddingtop-15">
     <div class="container set-2">
 
-        <div class="col-2">
-            <img src="images/coffe2.png" alt="Lorem Lorem" class="img-liquid" />
-            <p class="descp-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil necessitatibus quod harum tempora voluptate laborum commodi, ipsam aliquam. Dolorum culpa itaque assumenda cupiditate quaerat perspiciatis ratione suscipit cum deleniti beatae.</p>
+        <div class="col-2 mobileshow">
+            <div class="coffeHot-wrapper">
+                <h1>Hot Coffees</h1>
+                <button class="brown-primary">Order Now</button>
+            </div>
         </div>
 
         <div class="col-2">
+            <a href="#"><img src="images/coffe2.png" alt="Lorem Lorem" class="img-liquid" /></a>
+            <p class="descp-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil necessitatibus quod harum tempora voluptate laborum commodi, ipsam aliquam. Dolorum culpa itaque assumenda cupiditate quaerat perspiciatis ratione suscipit cum deleniti beatae.</p>
+        </div>
+
+        <div class="col-2 mobilehide">
             <div class="coffeHot-wrapper">
                 <h1>Hot Coffees</h1>
                 <button class="brown-primary">Order Now</button>
@@ -91,35 +101,35 @@
               <div class="carousel-content">
                 
                 <div class="slide">
-                  <img src="images/joedoe.png" class="img-liquid" alt="John Doe" />
+                  <a href="#" class="featuredimage"><img src="images/joedoe.png" class="img-liquid" alt="John Doe" /></a>
                   <h5>John Doe</h5>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis natus libero reprehenderit temporibus incidunt quam cupiditate.</p>
                 </div>
                 
                 <div class="slide">
-                    <img src="images/jendoe.png" class="img-liquid" alt="Ella Thomson" />
+                    <a href="#" class="featuredimage"><img src="images/jendoe.png" class="img-liquid" alt="Ella Thomson" /></a>
                   <h5>Ella Thomson</h5>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus praesentium ad ex illum! Dolores doloremque, non, tenetur illo modi similique minima consectetur exercitationem quos facilis quia? Reiciendis quidem quibusdam porro.</p>
                 </div>
                 
                 <div class="slide">
-                    <img src="images/joedoe.png" class="img-liquid" alt="Smith Marks" />
+                    <a href="#" class="featuredimage"><img src="images/joedoe.png" class="img-liquid" alt="Smith Marks" /></a>
                     <h5>Smith Marks<h5>
                     <p>beatae iure minus facere ad veniam aspernatur dignissimos debitis ullam excepturi, deserunt fugit vitae.</p>
                 </div>
                 <div class="slide">
-                    <img src="images/jendoe.png" class="img-liquid" alt="Yvonne Samson" />
+                    <a href="#" class="featuredimage"><img src="images/jendoe.png" class="img-liquid" alt="Yvonne Samson" /></a>
                     <h5>Yvonne Samson<h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur mollitia in laboriosam delectus cumque, placeat distinctio deleniti voluptates.</p>
                 </div>
                 <div class="slide">
-                    <img src="images/joedoe.png" class="img-liquid" alt="John Peter" />
+                    <a href="#" class="featuredimage"><img src="images/joedoe.png" class="img-liquid" alt="John Peter" /></a>
                         <h5>John Peter<h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptatem quia, libero esse perspiciatis repudiandae quo sequi fugit atque laborum quisquam nam, deserunt animi eos nesciunt, omnis voluptatum! Optio, perspiciatis.</p>
                 </div>
               
                 <div class="slide">
-                    <img src="images/jendoe.png" class="img-liquid" alt="Ella Thomson" />
+                     <a href="#" class="featuredimage"><img src="images/jendoe.png" class="img-liquid" alt="Ella Thomson" /></a>
                   <h5>Ella Thomson</h5>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus praesentium ad ex illum! Dolores doloremque, non, tenetur illo modi similique minima consectetur exercitationem quos facilis quia? Reiciendis quidem quibusdam porro.</p>
                 </div>
@@ -137,6 +147,7 @@
 
 
 <section class="background-brown central-content">
+    <div class="wavetop"></div>
     <div class="container">
         <div class="col-middle-8 textalign-center-section wereOpen">
             <h1>We're Open</h1>
@@ -156,6 +167,7 @@
         </div>
       
     </div>
+    <div class="wavebottom"></div>
 </section>
 
 
@@ -187,10 +199,6 @@
     </div>
 </section>
 
-
-
-
-
 </main>
 
 
@@ -217,26 +225,50 @@
     </div>
 </aside>
 
-<footer>
-    <div class="container set-2">
 
-        <div class="col-2-6">
-            <a href="#"><img src="images/logocof.png" alt="Logo" class="img-liquid" /></a>
+<div class="wavetop"></div>
+<footer class="background-brown">
+    
+    <div class="container set-2 paddingtop-15 footerinfo">
+
+        <div class="col-2-4">
+            <a href="#"><img src="images/logofooter.png" alt="Logo" class="img-liquid width80" /></a>
         </div>
 
-        <div class="col-2-2">
+
+        <div class="col-2-3-2">
+            <h2>Information</h2>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="style.css">CSS</a></li>
+                <li><a href="js/app.js">Javascript</a></li>
+                <li><a href="#">ReactsJs</a></li>
+                <li><a href="#">Design & QA </a></li>
+                <li><a href="#">WordPress/PHP</a></li>
+                <li><a href="#">Gutenberg</a></li>
+                <li><a href="#">Demo</a></li>
+            </ul>
+        </div>
+
+        <div class="col-2-3-2">
             <h2>Contact Us</h2>
+            <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">email: mariconespinosa.info</a></li>
+            </ul>
 
+            <ul class="socialIcons">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
         </div>
-
-        <div class="col-2-2"></div>
-
-
     </div>
 
-    
-
-
+    <div class="container set-2 paddingtop-15 rightsCopy">
+        <p>© 2023 Pure Coffee. All Rights Reserved</p>
+    </div>
 
 </footer>
 

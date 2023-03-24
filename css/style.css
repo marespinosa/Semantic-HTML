@@ -71,7 +71,9 @@ p{
 
 }
 
-.container{
+
+
+.transparent-background .container{
     width:1380px;
     margin: 0 auto;
     max-width: 95%;
@@ -123,12 +125,22 @@ nav li a:hover{
     flex: 0 0 50%;
 }
 
+
+
 .col-2-2{
     flex: 0 0 20%;
 }
 
 .col-2-3{
     flex: 0 0 33%;
+}
+
+.col-2-3-2{
+    flex: 0 0 30%;
+}
+
+.col-2-4{
+    flex: 0 0 40%;
 }
 
 .col-2-6{
@@ -171,6 +183,7 @@ nav li a:hover{
 main{
     width: 100%;
     overflow: hidden;
+    padding-bottom: 10%;
 }
 
 .heroInfo{
@@ -184,7 +197,7 @@ main{
 }
 
 section button{
-    font-size: 25px;
+    font-size: 16px;
     color: #fff;
     padding: 10px 50px;
     margin-top: 30px;
@@ -208,7 +221,7 @@ section button{
 }
 
 .hero-section{
-    background-image: url(images/icons-section1.png);
+    background-image: url(../images/icons-section1.png);
     background-repeat: no-repeat;
     background-position: 30% 16%;
 }
@@ -221,32 +234,14 @@ section, .set-2{
 
 .background-brown{
     background-color: #c58940;
-    background-image: url(images/iconsbackground.png);
+    background-image: url(../images/iconsbackground.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
     padding-bottom: 20px;
 }
 
-.background-brown:before{
-   content: "";
-   background-image: url(images/wavetop.png);
-   position: absolute;
-   width: 100%;
-   margin-top: -11.8em;
-   height:230px;
-   background-size: cover;
-}
 
-.background-brown:after{
-    content: "";
-    background-image: url(images/wavebottom.png);
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    margin-top: 57%;
-}
 
 
 .heroImage img{
@@ -277,7 +272,7 @@ section, .set-2{
 }
 
 .transparent-background{
-    background-image: url(images/transparentbg.png);
+    background-image: url(../images/transparentbg.png);
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -440,16 +435,6 @@ section, .set-2{
 .paddingtopZero{
     padding-top: 0 !important;
 }
-
-.paddingbottom-15{
-    padding-bottom: 15%;
-}
-
-.paddingtop-15{
-    padding-top: 15%;
-}
-
-
 .wereOpen h1{
     padding-bottom: 10%;
 }
@@ -481,10 +466,15 @@ section, .set-2{
     
 }
 
+a.featuredimage{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+
 
 a.featuredimage img{
-    height: 300px;
-    width: 90%; 
     object-fit: cover;
     border-radius: 8px !important;
     -webkit-transition: all .3s linear;
@@ -530,4 +520,50 @@ a.featuredimage:hover img{
 
 .readMore:hover{
     background: #E5BA73;
+}
+
+img.width80{
+    width: 50%;
+    float: left;
+}
+
+footer ul{
+    padding-top: 50px;
+}
+
+footer li{
+    list-style: none;
+    padding: 5px 0;
+}
+
+footer a{
+    color:#fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+.rightsCopy p{
+    border-top: 1px solid #fff;
+    text-align: center;
+    width:100%;
+}
+.socialIcons{
+    margin-top: -30px;
+}
+.socialIcons li{
+    float: left;
+    margin-right: 10px;
+}
+
+.socialIcons li i:hover{
+    color:#E5BA73;
+}
+
+.mobileshow{
+    display: none;
 }

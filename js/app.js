@@ -186,3 +186,15 @@ const popupCloseBtn = document.getElementById("popup-close-btn");
 popupCloseBtn.addEventListener("click", () => {
     PopModalBox.style.display = "none";
 });
+
+
+const menuButton = document.querySelector('.menu-button');
+const menuList = document.querySelector('.menu');
+
+menuButton.addEventListener('click', () => {
+  menuList.classList.toggle('show-menu');
+});
+
+menuButton.addEventListener('click', () => {
+  menuButton.classList.toggle('close-menu');
+});
